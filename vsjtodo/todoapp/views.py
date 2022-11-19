@@ -3,7 +3,8 @@ from django.shortcuts import HttpResponse, render
 from .forms import TodoForm
 from .models import TodoModel
 
-# Del
+def test(request):
+    return render(request, 'test.html')
 
 def delete(request):
     if request.POST:
